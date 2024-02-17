@@ -1,0 +1,25 @@
+{
+    "name": "nuxt-app",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare",
+        "start": "node --inspect .output/server/index.mjs",
+        "autocannon": "autocannon -d 60 http://localhost:3000"
+    },
+    "dependencies": {
+        "@urql/vue": "^1.1.2",
+        "vue": "^3.4.15",
+        "vue-router": "^4.2.5"
+    },
+    "devDependencies": {
+        "@types/autocannon": "^7",
+        "autocannon": "^7.15.0",
+        "nuxt": "^3.10.2"
+    },
+    "packageManager": "yarn@4.1.0"
+}
