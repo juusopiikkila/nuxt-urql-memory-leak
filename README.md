@@ -6,5 +6,10 @@ Here are the steps to reproduce the memory leak
 yarn install
 yarn build
 yarn start
-yarn autocannon (in another console)
+
+# for memory leak (in another console)
+yarn autocannon:leak
+
+# for no memory leak (in another console)
+yarn autocannon:no-leak
 ```

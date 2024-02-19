@@ -17,7 +17,7 @@ export default defineNuxtPlugin(async (nuxtApp) => {
     });
 
     const client = createClient({
-        url: 'https://countries.trevorblades.com/graphql',
+        url: 'http://localhost:3000/api',
         exchanges: [
             ssr,
             fetchExchange,

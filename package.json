@@ -8,8 +8,9 @@
         "generate": "nuxt generate",
         "preview": "nuxt preview",
         "postinstall": "nuxt prepare",
-        "start": "node --inspect .output/server/index.mjs",
-        "autocannon": "autocannon -d 60 http://localhost:3000"
+        "start": "node --max_old_space_size=512 --inspect .output/server/index.mjs",
+        "autocannon:leak": "autocannon -d 60 http://localhost:3000/leak",
+        "autocannon:no-leak": "autocannon -d 60 http://localhost:3000/no-leak"
     },
     "dependencies": {
         "@urql/vue": "^1.1.2",
